@@ -70,6 +70,7 @@ cd jsmtproxy
 docker build -t jsmtproxy .
 docker run --name 'jsmtproxy' --restart unless-stopped -p 6969:6969 -dti jsmtproxy:latest
 ```
+Use `docker logs jsmtproxy` to see pm2 logs 
 
 ## License
 

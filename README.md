@@ -63,7 +63,13 @@ C:\> pm2 start mtproxy.js -i max
 ```
 **Note: You may need to open the proxy port number in your Windows firewall in order for it to accept connections.**
 
-
+## Docker Installation
+```
+git clone https://github.com/deadlink/JSMTProxy.git jsmtproxy
+cd jsmtproxy
+docker build -t jsmtproxy .
+docker run --name 'jsmtproxy' --restart unless-stopped -p 6969:6969 -dti jsmtproxy:latest
+```
 
 ## License
 
